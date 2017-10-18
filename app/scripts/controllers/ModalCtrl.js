@@ -1,5 +1,5 @@
 (function() {
-    function ModalCtrl(Room, $uibModalInstance) {
+    function ModalCtrl(Room, $uibModalInstance, $cookies) {
         this.cancel = function () {
             $uibModalInstance.close();
         };
@@ -8,7 +8,7 @@
             $uibModalInstance.close();
         };
         this.createUsername = function() {
-            $cookies.put('blocChatCurrentUser', modal.username);
+            $cookies.put('blocChatCurrentUser', this.username);
             $uibModalInstance.close();
         };
     }

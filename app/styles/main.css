@@ -54,3 +54,20 @@
     text-align: center;
     margin-top: 20px;
 }
+
+.message-area {
+    bottom: 0;
+    padding-bottom 10px;
+    position: fixed;
+    right: 200px;
+}
+
+.text {
+    width: 700px;
+    height: 40px;
+}
+
+.send-btn {
+    height: 40px;
+    background-color: #33ffbd
+}

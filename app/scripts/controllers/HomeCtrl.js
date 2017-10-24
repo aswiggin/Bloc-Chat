@@ -15,6 +15,11 @@
             home.currentRoom = room;
             home.messages = Message.getByRoomId(home.currentRoom.$id);
         }
+        home.sendMessage = function() {
+            home.newMessage.roomId = home.currentRoom.$id;
+            home.newMessage.username = home.currentUser;
+            Message.send(home.newMessage);
+        }
     }
 
     angular
